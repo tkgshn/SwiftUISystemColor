@@ -11,38 +11,38 @@ struct ContentView: View {
     var body: some View {
         
         Form {
-            ContentView2()
-                .padding(.vertical, 500.0)
-            Section(header: Text("フレーズ")) {
-                ForEach(1..<15) { a in
-                HStack {
-                    Image(systemName: "play.circle.fill")
-                        
-                        .buttonStyle(PlainButtonStyle())
-                        //                        .padding(.bottom, 10.0)
-                        .frame(width: nil)
-                        .font(.system(size: 30.0, weight: .thin))
-                        .foregroundColor(Color.accentColor)
-                    
-                    VStack(alignment: .leading) {
-                        Text("今日は晴れです")
-                        Spacer()
-                        Text("Today is summy day")
-                            .foregroundColor(Color(UIColor.secondaryLabel))
-                        
-                    }
-                    .padding(.leading)
-                
+//            ContentView2()
+//                .padding(.vertical, 500.0)
+//            Section(header: Text("フレーズ")) {
+//                ForEach(1..<15) { a in
+//                HStack {
 //                    Image(systemName: "play.circle.fill")
+//
 //                        .buttonStyle(PlainButtonStyle())
 //                        //                        .padding(.bottom, 10.0)
 //                        .frame(width: nil)
 //                        .font(.system(size: 30.0, weight: .thin))
 //                        .foregroundColor(Color.accentColor)
-                }
-                .padding(.vertical)
-                }
-            }
+//
+//                    VStack(alignment: .leading) {
+//                        Text("今日は晴れです")
+//                        Spacer()
+//                        Text("Today is summy day")
+//                            .foregroundColor(Color(UIColor.secondaryLabel))
+//
+//                    }
+//                    .padding(.leading)
+//
+////                    Image(systemName: "play.circle.fill")
+////                        .buttonStyle(PlainButtonStyle())
+////                        //                        .padding(.bottom, 10.0)
+////                        .frame(width: nil)
+////                        .font(.system(size: 30.0, weight: .thin))
+////                        .foregroundColor(Color.accentColor)
+//                }
+//                .padding(.vertical)
+//                }
+//            }
             Section(header: Text("定義済の標準色")) {
                 ColorSample(colorName: "black",     color: Color.black)
                 ColorSample(colorName: "blue",      color: Color.blue)
